@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToDoItem } from '../to-do-item';
+import { ITEMS } from '../mock-todo-item';
 
 @Component({
   selector: 'app-to-do-items',
@@ -8,6 +9,7 @@ import { ToDoItem } from '../to-do-item';
 })
 export class ToDoItemsComponent implements OnInit {
 
+  items = ITEMS;
 toDoItem: ToDoItem ={
   id: 1,
   name: "Learn Angular",

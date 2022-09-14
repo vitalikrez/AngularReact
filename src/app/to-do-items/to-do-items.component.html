@@ -4,3 +4,12 @@
 <div><span>id: </span>{{toDoItem.id}}</div>
 <div><span>name: </span>{{toDoItem.name}}</div>
 <div><span>isComplete: </span>{{toDoItem.isComplete}}</div>
+
+<h2>My List</h2>
+<ul class="items">
+    <li *ngFor="let item of items">{{item.name}}</li>
+</ul>
+
+<div *ngIf="items.length>0">
+    {{items.length}} {{items.length == 1 ? 'item' : 'items'}}
+</div>
