@@ -1,0 +1,36 @@
+.items{
+    list-style: none;
+    padding: .5em;
+    width: 15em;
+}
+
+
+.items li{
+    cursor: pointer;
+    background-color: rgb(165, 163, 163);
+    margin: .5em 0;
+    padding: .3em;
+    height:  1.6em;
+    border-radius: 4px;
+}
+
+.items li:hover{
+    color: rgb(236, 234, 234);
+    background-color: grey;
+}
+.counter{
+    font-size: 4em;
+}
+
+.items li.selected{
+    background-color: cadetblue;
+    color: yellow;
+}
+
+.items li.selected:hover{
+    background-color: rgb(255, 196, 232);
+}
+.invisible{
+    display: none;
+
+}
